@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DepositController">
+   <children>
+      <TableView fx:id="table" prefHeight="364.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="number" prefWidth="75.0" styleClass="result-table, column-table" text="№" />
+          <TableColumn fx:id="razm_vkl" prefWidth="159.0" styleClass="result-table, column-table" text="Размер вклада" />
+            <TableColumn fx:id="nach_percent" prefWidth="167.0" styleClass="result-table, column-table" text="Начисленные проценты" />
+            <TableColumn fx:id="na_chete" prefWidth="182.0" styleClass="result-table, column-table" text="Сумма на счете" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="369.0" prefHeight="17.0" prefWidth="43.0" text="Итого" styleClass="label-table" />
+      <Label fx:id="total_nach_percent" layoutX="322.0" layoutY="369.0" prefHeight="17.0" prefWidth="81.0" styleClass="label-table" />
+      <Label fx:id="total_na_chete" layoutX="505.0" layoutY="369.0" prefHeight="17.0" prefWidth="81.0" styleClass="label-table" />
+   </children>
+</AnchorPane>
